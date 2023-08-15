@@ -3,7 +3,7 @@
   hosts: localhost
   collections: ansible.controller
   roles: 
-    - enable_disable_instance
+    - { role: enable_disable_instance, tags: ["enable", "disable"] }
     
     
 
