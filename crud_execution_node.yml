@@ -1,6 +1,6 @@
 --- 
 - name: CRUD Ansible Execution Node 
-  hosts: localhost
+  hosts: web
   collections: ansible.controller
   tasks: 
     - debug: 
