@@ -3,6 +3,11 @@
   hosts: web
   collections: ansible.controller
   tasks: 
+
+    - name: Pause for 2 min 
+      ansible.builtin.pause:
+        minutes: 2
+        
     - debug: 
         msg: "Testing debug message"
     
