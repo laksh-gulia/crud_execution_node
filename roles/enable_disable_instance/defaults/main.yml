@@ -1,0 +1,7 @@
+---
+# defaults file for enable_disable_instance
+controller_user: ""
+controller_passwd: ""
+controller_host: ""
+instance_name: ""
+instance_enable: "true"

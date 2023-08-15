@@ -1,27 +1,10 @@
 --- 
 - name: CRUD Ansible Execution Node 
-  hosts: web
+  hosts: localhost
   collections: ansible.controller
-  tasks: 
-
-    - name: Pause for 2 min 
-      ansible.builtin.pause:
-        minutes: 2
-        
-    - debug: 
-        msg: "Testing debug message"
+  roles: 
+    - enable_disable_instance
     
-    # - name: Export all inventories
-    #   ansible.controller.instance:
-    #     hostname: "172.31.17.89"
-    #     enabled: true
-    #     controller_host: "https://student1.zxtpj.example.opentlc.com"
-    #     controller_username: "admin"
-    #     controller_password: "zeytufb4"
-    #   register: output
-
-    # - debug: 
-    #     var: output
     
 
     
