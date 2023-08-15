@@ -7,6 +7,3 @@
     controller_username: "{{ controller_user }}"
     controller_password: "{{ controller_passwd }}"
   register: instance_output
-
-- debug: 
-    var: instance_output
