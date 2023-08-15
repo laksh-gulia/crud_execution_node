@@ -1,7 +1,12 @@
 ---
-# defaults file for enable_disable_instance
+# Define authentication details for controller
 controller_user: ""
 controller_passwd: ""
 controller_host: ""
-instance_name: ""
+
 instance_enable: "true"
+
+# Define instance name as list for task to loop through multiple instances if needed
+instance_name: 
+  - ""
+

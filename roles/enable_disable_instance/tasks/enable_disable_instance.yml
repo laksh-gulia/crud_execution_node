@@ -1,9 +1,12 @@
 ---
-- name: Enable or Disable Instance
+- name: Enable or Disable Instances
   ansible.controller.instance:
-    hostname: "{{ instance_name }}"
+    hostname: "{{ item }}"
     enabled: "{{ instance_enable }}"
     controller_host: "{{ controller_host }}"
     controller_username: "{{ controller_user }}"
     controller_password: "{{ controller_passwd }}"
+  loop: "{{ instance_name }}"
+  when: instance_name is defined and instance_name | type_debug == "list"
   register: instance_output
+
