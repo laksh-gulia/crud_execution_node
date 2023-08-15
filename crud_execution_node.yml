@@ -1,0 +1,6 @@
+--- 
+name: CRUD Ansible Execution Node 
+hosts: execution_nodes
+tasks: 
+  - debug: 
+      msg: "Testing debug message"
